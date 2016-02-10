@@ -219,7 +219,7 @@ void SensorData::fillData(XsDataPacket * _packet){
 		if(packet.containsRawData() ){ ROS_INFO_THROTTLE(THROTTLE_VALUE, "RawData");}
 		if(packet.containsCalibratedData() ){ ROS_INFO_THROTTLE(THROTTLE_VALUE, "Calib Data");}
 		if(packet.containsSdiData() ){ ROS_INFO_THROTTLE(THROTTLE_VALUE, "SDI");}
-		//if(packet.containsStatusByte() ){ ROS_INFO_THROTTLE(THROTTLE_VALUE, "StatusByte");}
+		if(packet.containsStatusByte() ){ ROS_INFO_THROTTLE(THROTTLE_VALUE, "StatusByte");}
 		if(packet.containsDetailedStatus() ){ ROS_INFO_THROTTLE(THROTTLE_VALUE, "DetailedStatus");}
 		if(packet.containsPacketCounter8() ){ ROS_INFO_THROTTLE(THROTTLE_VALUE, "PacketCounter8");}
 		if(packet.containsPacketCounter() ){ ROS_INFO_THROTTLE(THROTTLE_VALUE, "PacketCounter");}
